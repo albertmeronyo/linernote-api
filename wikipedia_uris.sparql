@@ -1,0 +1,11 @@
+#+ summary: Gets the Wikipedia URIs for all Linernote resources
+#+ endpoint: https://api.druid.datalegend.net/datasets/albertmeronyo/linernote/services/linernote/sparql
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ln: <http://www.linernote.com/vocab/>
+PREFIX lnr: <http://www.linernote.com/>
+
+SELECT * WHERE {
+  ?sub ln:wikipedia_uri ?obj .
+}
