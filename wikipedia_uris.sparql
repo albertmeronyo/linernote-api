@@ -6,6 +6,6 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX ln: <http://www.linernote.com/vocab/>
 PREFIX lnr: <http://www.linernote.com/>
 
-SELECT * WHERE {
+SELECT ?obj WHERE {
   ?sub ln:wikipedia_uri ?obj .
 }
